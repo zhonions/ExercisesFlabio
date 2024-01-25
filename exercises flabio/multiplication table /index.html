@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <title>Calculadora de Tabuada</title>
+</head>
+<body>
+
+  <body>
+    <div id="calculator">
+        <h2>Calculadora de Tabuada</h2>
+        <div>
+            <input type="text" id="display" disabled>
+        </div>
+        <div>
+            <button onclick="appendToDisplay('1')">1</button>
+            <button onclick="appendToDisplay('2')">2</button>
+            <button onclick="appendToDisplay('3')">3</button>
+            <button onclick="clearDisplay()">C</button>
+        </div>
+        <div>
+            <button onclick="appendToDisplay('4')">4</button>
+            <button onclick="appendToDisplay('5')">5</button>
+            <button onclick="appendToDisplay('6')">6</button>
+            <button onclick="appendToDisplay('0')">0</button>
+        </div>
+        <div>
+            <button onclick="appendToDisplay('7')">7</button>
+            <button onclick="appendToDisplay('8')">8</button>
+            <button onclick="appendToDisplay('9')">9</button>
+            <button id="calc" onclick="calcularTabuada()"> Calc</button>
+        </div>
+    </div>
+      <div>
+        <table id="tabuadaTable">
+          <tr>
+            <th>Multiplicador</th>
+            <th>X</th>
+            <th>Numero</th>
+            <th>Resultado</th>
+          </tr>
+        </table>
+      </div>
+</div>
+</body>
+<script src="javascript.js"></script>
+
+</html>
